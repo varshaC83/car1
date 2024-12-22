@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini Urus - Carcycle Hub</title>
+    <link rel="stylesheet" href="lamborghini.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <h1 class="logo">Carcycle Hub</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Lamborghini Urus</h1>
+        <p>Experience the thrill of driving the world's first Super SUV</p>
+        <img src="u1.webp" alt="Lamborghini Urus" class="hero-image">
+    </section>
+
+    <!-- Car Details Section -->
+    <section class="car-details">
+        <h2>About the Lamborghini Urus</h2>
+        <p>The Lamborghini Urus is a luxury SUV that combines sports car performance with the functionality of an SUV. It is equipped with a twin-turbo V8 engine, stunning design, and the most advanced technology. Perfect for those who want power, style, and comfort in one car.</p>
+        
+        <h3>Key Features</h3>
+        <ul>
+            <li>Engine: 4.0L Twin-Turbo V8</li>
+            <li>Horsepower: 641 HP</li>
+            <li>Top Speed: 190 mph (305 km/h)</li>
+            <li>0-60 mph: 3.6 seconds</li>
+            <li>Seating: 5-passenger</li>
+        </ul>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="u2.webp" alt="Lamborghini Urus Front View">
+            <img src="u3.webp" alt="Lamborghini Urus Side View">
+            <img src="u4.webp" alt="Lamborghini Urus Interior">
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking">
+        <h2>Book a Test Drive</h2>
+        <form action="https://api.web3forms.com/submit" method="post">
+            <input type="hidden" name="access_key" value="50d8b515-bf24-4cdd-84eb-a523451ec697">
+    
+            <!-- Added name attributes to each input field -->
+            <input type="text" name="abbu" placeholder="Your Name" required>
+            <input type="email" name="varnitha@gmail.com" placeholder="Your Email" required>
+            <input type="date" name="11/06/2024" placeholder="Preferred Date" required>
+            
+            <button type="submit">Book Now</button>
+        </form>
+    </section> 
+      
+    <!--<script>
+        const form = document.getElementById('form');
+        const result = document.getElementById('result');
+        
+        form.addEventListener('submit', function(e) {
+            const formData = new FormData(form);
+            e.preventDefault();
+        
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+        
+            result.innerHTML = "Please wait..."
+        
+            fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: json
+                })
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        result.innerHTML = json.message;
+                    } else {
+                        console.log(response);
+                        result.innerHTML = json.message;
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    result.innerHTML = "Something went wrong!";
+                })
+                .then(function() {
+                    form.reset();
+                    setTimeout(() => {
+                        result.style.display = "none";
+                    }, 3000);
+                });
+        });
+        </script> -->
+        
+     
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Carcycle Hub &copy; 2024 | All Rights Reserved</p>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>

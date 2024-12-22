@@ -1,0 +1,78 @@
+/* Sell Section */
+#sell {
+    padding: 30px 20px;
+    background-color: #f8f9fa; /* Light background for contrast */
+    text-align: center;
+    min-height: 250px; /* Set a minimum height */
+}
+
+#sell .sell-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#sell h1 {
+    font-size: 40px;
+    color: #db0808;
+    margin-bottom: 20px;
+}
+
+#sell p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.sell-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.sell-form .form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.sell-form .form-group input,
+.sell-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sell-form .form-group input:focus,
+.sell-form .form-group textarea:focus {
+    outline: none;
+    border-color: #db0808;
+    box-shadow: 0 0 5px rgba(219, 8, 8, 0.3);
+}
+
+.sell-form .form-group textarea {
+    resize: none;
+}
+
+.sell-btn {
+    display: inline-block;
+    background-color: #db0808;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sell-btn:hover {
+    background-color: #fac031;
+    transform: scale(1.05);
+}

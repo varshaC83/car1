@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero-image {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.car-details {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.car-details h2 {
+    margin-bottom: 1rem;
+}
+
+.car-details p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.car-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.car-details li {
+    margin-bottom: 0.5rem;
+}
+
+.gallery {
+    background-color: #111;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 1rem;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery-images img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.booking {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.booking h2 {
+    margin-bottom: 1rem;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking input, .booking button {
+    width: 80%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.booking input[type=\"text\"], 
+.booking input[type=\"email\"], 
+.booking input[type=\"date\"] {
+    background-color: #fff;
+    color: #000;
+}
+
+.booking button {
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.booking button:hover {
+    background-color: #ff9900;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carcycle Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="carcycle_hub-removebg-preview.png">
+            </div>
+
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Menu">Cars</a></li>
+                <li><a href="#Gallary">Gallary</a></li>
+                <li><a href="#sell">Sell</a></li>
+                <li><a href="#Order">Book</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+        </nav>
+
+        <div class="main">
+
+            <div class="men_text">
+                <h1>Get Second Hand<span>CAR</span><br>in a Easy Way</h1>
+            </div>
+
+            <div class="main_image">
+                <img src="main2.png">
+            </div>
+
+        </div>
+        <section id="sell">
+        <div class="sell-container">
+            <h1>Sell Your Car</h1>
+            <p>Fill out the form below to list your car for sale.</p>
+            <form class="sell-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="50d8b515-bf24-4cdd-84eb-a523451ec697">
+                <div class="form-group">
+                    <label for="carName">Car Name:</label>
+                    <input type="text" id="carName" name="carName" placeholder="Enter car name" required>
+                </div>
+                <div class="form-group">
+                    <label for="model">Model:</label>
+                    <input type="text" id="model" name="model" placeholder="Enter model" required>
+                </div>
+                <div class="form-group">
+                    <label for="year">Year:</label>
+                    <input type="number" id="year" name="year" placeholder="Enter year" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price (in USD):</label>
+                    <input type="number" id="price" name="price" placeholder="Enter price" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" placeholder="Write a brief description" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="uploadImage">Upload Image:</label>
+                    <input type="file" id="uploadImage" name="uploadImage" accept="image/*" required>
+                </div>
+                <button type="submit" class="sell-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    </section>
+
+</body>
+</html>
